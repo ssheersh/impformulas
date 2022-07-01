@@ -27,7 +27,11 @@
 \section{Physics}
 \begin{enumerate}
 
-	\item Energy of a Wave(for a length $dx$ at $x$): $$dK=dE=\frac{1}{2}\mu \omega^2\|\psi\|^2 dx$$
+	\item Energy of a Wave(for a length $dx$ at $x$): 
+		\begin{align}
+			dU &=\frac{1}{2}T\left(\frac{\partial y}{\partial x} \right)^2dx\\
+			=dK &=\frac{1}{2} \mu v^2 \left(\frac{\partial y}{\partial x} \right)^2dx=\frac{1}{2}\mu v^2_{y} dx
+		\end{align}
 
 	\item Energy for a Wavelength worth of length: 
 \begin{equation}
@@ -41,7 +45,7 @@
 \end{equation}
 \item Poisson's ratio:
 \begin{equation}
-	\nu=-\frac{d \epsilon_{trans}}{d\epsilon_{axial}}	
+	\nu=-\frac{d \epsilon_{\text{trans}}}{d\epsilon_{\text{axial}}}	
 \end{equation}
 	\item Young Laplace Equation:
 		For any general surface there exist two radii of curvature $R_1$ and $R_2$. The Young Laplace equation relates the pressure difference across the surface solely due to surface tension:
@@ -82,7 +86,7 @@
 		\begin{equation}
 			E_{th}=\left(1+\frac{m}{M}\right) Q
 		\end{equation}
-		where $m$ is the mass of incoming particle while $M$ is the mass of the particle at rest. (*Can be genralised by using $\frac{M+m}{M}$ and then interpreting some kind of total mass)
+		where $m$ is the mass of incoming particle while $M$ is the mass of the particle at rest. (*Can be generalised by using $\frac{M+m}{M}$ and then interpreting some kind of total mass)
 	\item When moving up the plane, the slope of surface of the liquid in container is:
 		\begin{equation}
 			\tan(\theta)=\frac{a+g \sin(\alpha)}{g\cos(\alpha)}
@@ -144,6 +148,12 @@
 			D=\sqrt{2R h_{t}}+\sqrt{2R h_{r}}
 		\end{equation}
 		where $h_t$ is the height of the transmitter and $h_r$ the height of the receiver.
+	\item For a body of liquid with height $h$, it is very useful to take the average pressure as $(\rho gh/2)$ and multiply it over the surface area in contact to get the force.
+	\item Centre of masses and Moment of inertia of different objects:
+		\begin{enumerate}
+			\item Ring: C=(0,0),I =$MR^2$
+			\item
+		\end{enumerate}
 \end{enumerate}
 \section{Chemistry}
 \begin{enumerate}
@@ -206,7 +216,7 @@ G* is calculated using an electrolyte with known conductivity
 	\item Anode is the terminal where oxidation occurs and where the \emph{conventional current enters the circuit};\textbf{ in a battery or a source of DC, it is the \emph{negative terminal }} \emph{but} \textbf{in a passive load(e.g. an electrolytic cell), it is the \emph{positive terminal.}}
 	\item The meaning of Van Der Waal's constants:
 		\begin{itemize}
-			\item \emph{a}: It is the proportionality constant, and the $\left(\frac{n}{V}\right)^2$ comes from the fact that pressure depends on both force of repulsion and the frequency of collisions both of which are reduced by factors of concentration ($=\frac{n}{V}$)
+			\item \emph{a}: It is the proportionality constant, and the $\left(\dfrac{n}{V}\right)^2$ comes from the fact that pressure depends on both force of repulsion and the frequency of collisions both of which are reduced by factors of concentration ($=\dfrac{n}{V}$)
 			\item \emph{b}	$$ b=4N_{A} V_{molecule} $$
 		\end{itemize}
 	\item \begin{table}[h!]
@@ -312,7 +322,15 @@ G* is calculated using an electrolyte with known conductivity
 					V_{c}=3b
 				\end{equation}
 		\end{enumerate}
-	\item $\mathrm{P_{\text {final }}=\sqrt{P_{x}^{o} \times P_{y}^{o}}}$
+	\item $ P_{\text {final }}=\sqrt{P_{x}^{o} \times P_{y}^{o}}$ for a very special case of minimum composition of one of the substances to have minimum mole fraction in vapour phase
+	\item As branching increases among isomeric alkanes, stability increases and hence heat of combustion decreases
+
+	\item If molality and molarity of any species in a solution is numerically the same, it is same for all the components and for it,numerical value of ml of solution = numerical value of gm of solvent
+	\item Rate of diffusion of a gas from an orifice:
+		\begin{equation}
+			r_{\text{eff}}=\frac{P A}{\sqrt{2\pi M_{gas}RT}}N_{A}
+		\end{equation}
+		where $P$ is the pressure of the container, $A$ is the area of the orifice, $M_{gas}$ is the molar mass of the gas. 
 \end{enumerate}
 \section{Math}
 \begin{enumerate}
@@ -417,7 +435,7 @@ G* is calculated using an electrolyte with known conductivity
 			\end{equation}
 		\item REMEMBER: If asked for non consecutive in combinatorics question, think "gaps"
 		\item Think rotation of planes, think of angles between the normals of the plane
-		\item Anytime you encounter an integral which involves something like $\frac{x^2-1}{x^2+1}$ try putting in $t=x+\frac{1}{x}$. for eg.:
+		\item Anytime you encounter an integral which involves something like $\dfrac{x^2-1}{x^2+1}$ try putting in $t=x+\frac{1}{x}$. for eg.:
 			\begin{align*}
 				I &=\int_{1}^{\sqrt{2}+1}\frac{x^2-1}{x^2+1}\frac{1}{\sqrt{1+x^4}}dx
 			\\        &=\int_{1}^{\sqrt{2}+1}\frac{(1-\frac{1}{x^2})dx}{(x+\frac{1}{x})\sqrt{x^2+\frac{1}{x^2}}}
@@ -512,5 +530,6 @@ G* is calculated using an electrolyte with known conductivity
 			\begin{equation}
 				\Rightarrow \boxed{\Delta_{bc} \Delta_{ab}=\Delta^2_{ca}}
 			\end{equation}
+		\item If thinking about shortest distance where lines are acting as a constraint, then think about the mirror images of the points about those lines			
 \end{enumerate}
 \end{document}
