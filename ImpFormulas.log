@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.12)  8 JUL 2022 19:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.12)  26 JUL 2022 13:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -632,20 +632,20 @@ Package: chemfig 2021/08/01 v1.6b Draw molecule with an easy syntax (CT)
 ) (./ImpFormulas.aux)
 \openout1 = `ImpFormulas.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 (c:/texlive/2021/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -676,20 +676,20 @@ Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.18} (current compat level: 1.15).
 
 
-Package chemgreek Info: Activating mapping `default' on line 25.
+Package chemgreek Info: Activating mapping `default' on line 27.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
 
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 26
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 28
 .
 
 (c:/texlive/2021/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -698,17 +698,17 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
  [6]
-Overfull \hbox (0.3336pt too wide) detected at line 236
+Overfull \hbox (0.3336pt too wide) detected at line 248
 [][][]
  []
 
 
-Overfull \hbox (79.60214pt too wide) detected at line 239
+Overfull \hbox (79.60214pt too wide) detected at line 251
 []\OMS/cmsy/m/n/10 ^^@[][]
  []
 
 [7] [8] [9]
-Overfull \hbox (7.98882pt too wide) in paragraph at lines 337--338
+Overfull \hbox (7.98882pt too wide) in paragraph at lines 349--350
 []\OT1/cmr/m/n/10 For $\OML/cmm/m/it/10 n \OT1/cmr/m/n/10 = 2\OML/cmm/m/it/10 ;
  \OT1/cmr/m/n/10 3$(Succinic, Glu-taric acid): Forms the re-spec-tive 5-membere
 d
@@ -717,63 +717,66 @@ d
 [10] (c:/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 ) [11]
-Overfull \hbox (91.29816pt too wide) detected at line 412
+Overfull \hbox (16.47281pt too wide) in paragraph at lines 412--413
+[]\OT1/cmr/m/n/10 If there is a pri-mary amine in the sam-ple, it re-acts to fo
+rm a sulphonamide
+ []
+
+[12]
+Overfull \hbox (91.29816pt too wide) detected at line 442
 [][][] [][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/1
 0 ^^A [][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
 dx \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 K
  []
 
-<Triangle_Pic.png, id=57, 685.05937pt x 416.55624pt>
+<Triangle_Pic.png, id=60, 685.05937pt x 416.55624pt>
 File: Triangle_Pic.png Graphic file (type png)
 <use Triangle_Pic.png>
-Package pdftex.def Info: Triangle_Pic.png  used on input line 449.
+Package pdftex.def Info: Triangle_Pic.png  used on input line 479.
 (pdftex.def)             Requested size: 171.26442pt x 104.1388pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[12]
+[13]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 467.
+(amsmath)                 on input line 497.
 
-
-Overfull \hbox (21.95096pt too wide) detected at line 477
+[14 <./Triangle_Pic.png>]
+Overfull \hbox (21.95096pt too wide) detected at line 507
 []\OML/cmm/m/it/10 `[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) := [
 ] [] = [] [] [][] [] []
  []
 
-[13 <./Triangle_Pic.png>] [14] [15] [16] [17] [18] (./ImpFormulas.aux) ) 
+[15] [16] [17] [18] [19] [20] (./ImpFormulas.aux) ) 
 Here is how much of TeX's memory you used:
- 26678 strings out of 478353
- 678359 string characters out of 5852100
- 1078765 words of memory out of 5000000
- 44373 multiletter control sequences out of 15000+600000
+ 26679 strings out of 478353
+ 678364 string characters out of 5852100
+ 1078774 words of memory out of 5000000
+ 44374 multiletter control sequences out of 15000+600000
  413941 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,17n,89p,732b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/tex
-live/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texliv
-e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
-c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/t
-exlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texli
-ve/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on ImpFormulas.pdf (18 pages, 323714 bytes).
+{c:/texlive/2021/texmf-dist/
+fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cme
+x10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive
+/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:
+/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2
+021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2021/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fo
+nts/type1/public/cm-super/sfrm1000.pfb>
+Output written on ImpFormulas.pdf (20 pages, 331286 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 167 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

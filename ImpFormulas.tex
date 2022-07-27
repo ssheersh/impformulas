@@ -19,9 +19,11 @@
 \date{21 April 2022}
 \newcommand{\Cr}{\times}
 \DeclareMathOperator{\adj}{adj}
-\newcommand{\Det}[1]{|#1|}
+\newcommand{\Det}[1]{\left|#1\right|}
 \newcommand{\Sub}[1]{\textsubscript{#1}}
+\newcommand{\cosec}{cosec}
 \newcommand{\Sup}[1]{\textsuperscript{#1}}
+% note that sometimes I have (ab)used the \Det operator as a mod opertor so don't get confused while reading it 
 \begin{document}
 \maketitle
 \section{Physics}
@@ -49,9 +51,14 @@
 \end{equation}
 	\item Young Laplace Equation:
 		For any general surface there exist two radii of curvature $R_1$ and $R_2$. The Young Laplace equation relates the pressure difference across the surface solely due to surface tension:
+
 \begin{equation}
 	\Delta p= \sigma \left(\frac{1}{R_1}+\frac{1}{R_2}\right)
 \end{equation}
+		\begin{itemize}
+			\item The excess pressure due to a spherical bubble is $\Delta p=\frac{2\sigma}{r}$
+			\item The excess pressure due to a cyindrical bubble is $\Delta p=\frac{\sigma}{r}$
+		\end{itemize}
 	\item Some Fundamental Values:
 		\begin{enumerate}
 			\item $hc=1240 \ eV \ nm $
@@ -109,7 +116,7 @@
 		\end{equation}
 		where $b$ is the distance of closest approach, $v$ is the initial/final velocity(at $r\rightarrow \infty$), and the potential(potential per mass if you want to be picky) is of the form $V(r)=\frac{k}{r}$
 	\item Impedance in an AC circuit is calculated as in a DC circuit (i.e $$Z_1+Z_2$$ for series and $$Z_1\oplus Z_2=\left(\frac{1}{Z_1}+\frac{1}{Z_2}\right)^{-1}$$ for parallel), using the fact that impedance for inductor is $$Z_L=i\omega L$$ and for capacitor is $$Z_C=\frac{1}{i\omega C}=-i\frac{1}{\omega C}$$
-	\item For an ideal gas, the Kinetic Energy per unit volume is: $$T_{V}=\frac{\rho C_v T}{M}$$, and thus when applying Bernoulli's principle on the motion of an ideal gas use this in the $T_i$ part inside the container 
+	\item For an ideal gas, the Kinetic Energy per unit volume is: $$\mathcal{T}_{V}=\frac{\rho C_v T}{M}$$, and thus when applying Bernoulli's principle on the motion of an ideal gas use this in the $\mathcal{T}_{i}$ part inside the container 
 	\item Facts about a standing wave:
 		\begin{itemize}
 			\item Near the anti-node potential energy of the particles, when they reach their extreme position, is minimum
@@ -192,6 +199,11 @@
 				\end{equation}
 			\item The angular momentum is preserved (Kepler's second law), and thus $r_1 v_1= r_2 v_2$ for any $r_1 \text{ and } r_2$ on the orbit.
 		\end{enumerate}
+	\item Bohr quantization condition is a statement about the TOTAL Angular momentum of the atomic system in question. So, for eg., if two electrons are resent in the same orbit $n$, the sum of their angular momentum in the orbits will be $\dfrac{nh}{2\pi}$
+	\item Self energy for a hollow sphere is $$V=\frac{Q^2}{8\pi\epsilon_0 R}$$
+	\item Self energy for a solid sphere is $$V=\frac{3 Q^2}{20\pi\epsilon_0 R}$$
+	\item If in a rotating sphere, cylinder,shell, ring etc. is purely rolling($v_0= \omega R$ ), then the velocity vector of any point on its circumference passes through the topmost point P.
+	\item Kepler's law is valid for any trajectory, even a purely radial one(where $a$ becomes$\frac{R}{2}$ where $R$ is the inital starting point)
 \end{enumerate}
 \section{Chemistry}
 \begin{enumerate}
@@ -374,12 +386,12 @@ G* is calculated using an electrolyte with known conductivity
 	\item Lyophillic sols are highly viscous
 	\item Reactions of $\mathrm{MnO_{4}^{-}}$:
 		\begin{enumerate}
-			\item In acidic medium: $\mathrm{MnO_{4}^{-} \rightarrow Mn^{2+}}$
-			\item In neutral medium: $\mathrm{MnO_{4}^{-} \rightarrow MnO_2}$
-			\item In basic medium: $\mathrm{MnO_{4}^{-} \rightarrow MnO_4^{2-}}$
+			\item In acidic medium: $\mathrm{MnO_{4}^{-} \rightarrow Mn^{2+}}$(Purple to pale-pink )
+			\item In neutral medium: $\mathrm{MnO_{4}^{-} \rightarrow MnO_2}$ (Purple to black-brown )
+			\item In basic medium: $\mathrm{MnO_{4}^{-} \rightarrow MnO_4^{2-}}$(Purple to Green )
 
 		\end{enumerate}
-	\item Disiamylborane($\mathrm{Sia_2BH}$) is an organoborane used in organic synthesis. It is used for hydroboration–oxidation reactions of terminal alkynes, giving aldehydes via anti-Markovnikov hydration followed by tautomerization
+	\item Disiamylborane($\mathrm{Sia_2BH}$ ) is an organoborane used in organic synthesis. It is used for hydroboration–oxidation reactions of terminal alkynes, giving aldehydes via anti-Markovnikov hydration followed by tautomerization
 	\item O\Sub{3} is diamagnetic.
 	\item Coagulation value is the millimoles of an electrolyte that must be added to 1 L of a colloidal solution for complete coagulation. 
 	\item Beckmann rearrangement is the conversion of oxime to amide.
@@ -390,8 +402,26 @@ G* is calculated using an electrolyte with known conductivity
 		\begin{enumerate}
 			\item In acidic medium: 
 		\end{enumerate}
-	\item Alum: $\mathrm{KAl(SO_4)_2}.12H_2 O$
+	\item Alum: $\mathrm{KAl(SO_4)_2}.12H_{2} O$
 	\item Allenes with different groups on the two terminal carbons are optically active if there are an even number of double bonds in the allene, while those with odd number of double bonds are not.
+	\item PCl\Sub{5} reacts with the carbonyl bond in a ketone to result in formation of geminal dichloride.
+	\item Ketone +HNO\Sub{2}/HCl forms the respective oxime.
+	\item Hinsberg test:
+		Benzene sulphonyl chloride is shaked with the sample with a strong base $(KOH/NaOH)$ and the following observations occur:
+		\begin{enumerate}
+			\item If there is a primary amine in the sample, it reacts to form a sulphonamide salt, which is soluble in water
+			\item If there is a secondaty amine in the sample, it reacts to form an insoluble sulphonamide
+			\item If there is a tertiary amine in the sample, it doesn't react initially and stays insoluble. However, after adding a bit of dilute acid, it forms an ammonium salt and thus dissolves in the sample. 
+		\end{enumerate}
+	\item $\mathrm{P_{4 \ (white)}+NaOH+ 3 H_2 O\rightarrow PH_3+ NaH_2 PO_2}$	
+	\item To calculate the equivalent mass in a disproportionation reaction, calculate the equivalent masses in each of both the reduction and oxidation reactions, adn then add them.
+	\item 231 for R=Me in amines and 213 for R=Et onwards for amines.
+	\item Entropy of mixing of ideal gases:
+		\begin{equation}
+			\Delta S=R\sum_{i=0}^{n} n_i \ln(\chi_i)=nR\sum_{i=0}^{n}\chi_i\ln(\chi_i)
+		\end{equation}
+	\item $\mathrm{R-CONH_2+P_2 O_5} \rightarrow \mathrm{R-C\equiv N}$  
+	\item Moist $\mathrm{Ag_{2} O}$ is used for hydrolysis of SN\Sub{2} type.
 \end{enumerate}
 \section{Math}
 \begin{enumerate}
@@ -410,13 +440,13 @@ G* is calculated using an electrolyte with known conductivity
 \begin{equation}
 	\int_{0}^{\frac{\pi}{2}} \sin^{n}(x)\cdot \cos^{m}(x)dx=\frac{[(n-1)(n-3)(n-5)\dots 2\ or \ 1][(m-1)(m-3)(m-5)\dots 2 \ or \ 1 ]}{(m+n-0)(m+n-2)(m+n-4)\dots 2 \ or \ 1} K
 \end{equation}
-\begin{equation}
+\begin{equation*}
 	\text{where }    K= 
 	\begin{dcases}
 		\frac{\pi}{2} ,& \text{if }  m \text{ and } n \text{ are even}\\
 		        1,              & \text{otherwise}
 	\end{dcases}
-\end{equation}			
+\end{equation*}			
 	\item Box product tricks:
 		\begin{enumerate}
 			\item \begin{equation}\left[(\vec{a}\Cr \vec{b}) \  (\vec{b}\Cr \vec{c}) \ (\vec{c}\Cr\vec{a})\right]=\left[\vec{a} \vec{b} \vec{c}\right]^2\end{equation}
@@ -639,6 +669,38 @@ G* is calculated using an electrolyte with known conductivity
 			\item $h^2-ab=0$ implies perpendicular lines
 			\item $h^2-ab<0$ implies imaginary lines
 		\end{itemize}
-				
+		\item If there is a comparison of $\displaystyle{\sum_{cyclic} a^2}$ and $\displaystyle{\prod_{cyclic} a}$, try to use the sum of the reciprocals to get an inequality and then use that in the expansion of $\displaystyle{\left(\sum_{cyclic}a\right)^2}$		
+		\item For the mid-point $V$ of a focal chord of a standard parabola:
+			\begin{equation}
+				PV^2=AV^2+3 AS^2
+			\end{equation}
+			where P is one of the ends of the focal chord, A is the vertex and S is the focus
+		\item if $N$ is expressed in the form $N=p_1^{n_1}\Cr p_2^{n_2}\Cr p_3^{n_3}\dots p_{k}^{n_k}$ then the number of ways in which $N$ can be expressed as a product of two co-prie numbers is $2^{k-1}$ where k is the number of its prime factors.
+		\item Radius of curvature:
+			\begin{itemize}
+				\item The radius of curvature $\rho$ is:
+					\begin{equation}
+						\rho = \Det{\frac{ds}{d\theta}} 
+					\end{equation}
+				\item For a function $y=f(x)$, the radius of curvature $\rho$ is:
+					\begin{equation}
+						\rho = \Det{\frac{(1+y'^2)^\frac{3}{2}}{y''}}
+					\end{equation}
+				\item For a point on the ellipse $P(a\cos(\theta), b\sin(\theta))$, $\rho$ is:
+					\begin{equation}	
+						\rho = \frac{(b \cos^2(\theta)+ a \sin^2(\theta))^\frac{3}{2}}{ab}		
+					\end{equation}
+				\item Thus, the maximum radius of curvature (minimum curvature) is at $(0,b)$ $\rho=\frac{a^2}{b}$and the minimum radius of curvature (maximum curvature) is at $(a,0)$, $\rho=\frac{b^2}{a}$
+
+			\end{itemize}
+   	\item For a series in $\tan$ and powers of $2$, remember the following for telescoping:
+			\begin{equation}
+				\tan(\theta)=\cot(\theta) - 2\cot(2\theta)
+			\end{equation}
+	\item A ray passing throuh one of the focus of an ellipse from the inside passes through the other focus on reflection
+	\item A useful identity for $\sec$ and $\cosec$
+		\begin{equation}
+			a^2\cosec^2(\theta)+b^2\sec^2(\theta)=(a\cot(\theta)-b\tan(\theta))^2+(a+b)^2)
+		\end{equation}
 \end{enumerate}
 \end{document}

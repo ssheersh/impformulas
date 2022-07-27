@@ -19,9 +19,11 @@
 \date{21 April 2022}
 \newcommand{\Cr}{\times}
 \DeclareMathOperator{\adj}{adj}
-\newcommand{\Det}[1]{|#1|}
+\newcommand{\Det}[1]{\left|#1\right|}
 \newcommand{\Sub}[1]{\textsubscript{#1}}
+\newcommand{\cosec}{cosec}
 \newcommand{\Sup}[1]{\textsuperscript{#1}}
+% note that sometimes I have (ab)used the \Det operator as a mod opertor so don't get confused while reading it 
 \begin{document}
 \maketitle
 \section{Physics}
@@ -49,9 +51,14 @@
 \end{equation}
 	\item Young Laplace Equation:
 		For any general surface there exist two radii of curvature $R_1$ and $R_2$. The Young Laplace equation relates the pressure difference across the surface solely due to surface tension:
+
 \begin{equation}
 	\Delta p= \sigma \left(\frac{1}{R_1}+\frac{1}{R_2}\right)
 \end{equation}
+		\begin{itemize}
+			\item The excess pressure due to a spherical bubble is $\Delta p=\frac{2\sigma}{r}$
+			\item The excess pressure due to a cyindrical bubble is $\Delta p=\frac{\sigma}{r}$
+		\end{itemize}
 	\item Some Fundamental Values:
 		\begin{enumerate}
 			\item $hc=1240 \ eV \ nm $
@@ -109,7 +116,7 @@
 		\end{equation}
 		where $b$ is the distance of closest approach, $v$ is the initial/final velocity(at $r\rightarrow \infty$), and the potential(potential per mass if you want to be picky) is of the form $V(r)=\frac{k}{r}$
 	\item Impedance in an AC circuit is calculated as in a DC circuit (i.e $$Z_1+Z_2$$ for series and $$Z_1\oplus Z_2=\left(\frac{1}{Z_1}+\frac{1}{Z_2}\right)^{-1}$$ for parallel), using the fact that impedance for inductor is $$Z_L=i\omega L$$ and for capacitor is $$Z_C=\frac{1}{i\omega C}=-i\frac{1}{\omega C}$$
-	\item For an ideal gas, the Kinetic Energy per unit volume is: $$T_{V}=\frac{\rho C_v T}{M}$$, and thus when applying Bernoulli's principle on the motion of an ideal gas use this in the $T_i$ part inside the container 
+	\item For an ideal gas, the Kinetic Energy per unit volume is: $$\mathcal{T}_{V}=\frac{\rho C_v T}{M}$$, and thus when applying Bernoulli's principle on the motion of an ideal gas use this in the $\mathcal{T}_{i}$ part inside the container 
 	\item Facts about a standing wave:
 		\begin{itemize}
 			\item Near the anti-node potential energy of the particles, when they reach their extreme position, is minimum
@@ -154,6 +161,49 @@
 			\item Ring: C=(0,0),I =$MR^2$
 			\item
 		\end{enumerate}
+	\item Current due to a stream of electrons:
+		\begin{equation}
+			i=ne A v_{d}	
+		\end{equation}
+	\item End correction in a resonance tube:
+		\begin{enumerate}
+			\item For a tube open at one end: $$e=0.6 r=0.3 D$$
+			\item For a tube open at both ends: $$e=1.2 r=0.6 D$$
+		\end{enumerate}
+	\item End correction in potentiometer:
+		\begin{equation}
+		e=\left | \frac{(R_1\ell_2)-(R_2\ell_1)}{R_1-R_2}\right |
+		\end{equation}
+	\item Loss in kinetic energy due to collision:
+		\begin{equation}
+			\frac{1}{2}\mu v_{\text{rel}}^2
+		\end{equation}
+	\item Potential inside a uniformly charged non-conducting sphere at a distance x from the centre :
+		\begin{equation}
+			V=\frac{1}{4\pi \epsilon_0} \frac{Q}{2R}(3-\frac{x^2}{R^2})
+		\end{equation}
+		where Q is the total charge on the sphere, R is the radius of the sphere and $x<R$ 
+	\item $d$ due to Fresnel biprism in YDSE:
+		\begin{equation}
+			d=2a(\mu-1)\alpha
+		\end{equation}
+	\item Orbits:
+		\begin{enumerate}
+			\item Semi-major axis:
+				\begin{equation}
+					a=\frac{r_{min}+r_{max}}{2}
+				\end{equation}
+			\item Eccentricity:
+				\begin{equation}
+					e=\frac{R-r}{R+r}
+				\end{equation}
+			\item The angular momentum is preserved (Kepler's second law), and thus $r_1 v_1= r_2 v_2$ for any $r_1 \text{ and } r_2$ on the orbit.
+		\end{enumerate}
+	\item Bohr quantization condition is a statement about the TOTAL Angular momentum of the atomic system in question. So, for eg., if two electrons are resent in the same orbit $n$, the sum of their angular momentum in the orbits will be $\dfrac{nh}{2\pi}$
+	\item Self energy for a hollow sphere is $$V=\frac{Q^2}{8\pi\epsilon_0 R}$$
+	\item Self energy for a solid sphere is $$V=\frac{3 Q^2}{20\pi\epsilon_0 R}$$
+	\item If in a rotating sphere, cylinder,shell, ring etc. is purely rolling($v_0= \omega R$ ), then the velocity vector of any point on its circumference passes through the topmost point P.
+	\item Kepler's law is valid for any trajectory, even a purely radial one(where $a$ becomes$\frac{R}{2}$ where $R$ is the inital starting point)
 \end{enumerate}
 \section{Chemistry}
 \begin{enumerate}
@@ -289,7 +339,7 @@ G* is calculated using an electrolyte with known conductivity
 	\item $[Co(NH_3)_4Cl_2]Cl$ is a diamagnetic compound.
 	\item Efficiency of an electrolytic cell:
 		\begin{equation}
-			\eta=\frac{\Delta^{\circ}G}{\Delta^{\circ}H}=1-T\frac{\Delta^{\circ}S}{\Delta^{\circ}H}
+			\eta=\frac{\Delta G^{\circ}}{\Delta H^{\circ}}=1-T\frac{\Delta S^{\circ}}{\Delta H^{\circ}}
 		\end{equation}
 	\item In the 3d series, when the lower elements (Sc, Ti, V) get oxidised, they almost always lose all of their $4s$ and $3d$ electrons and acquire the $[Ar]$ noble gas configuration. Thus their oxides (like VO\Sub{2}\Sup{+})are less oxidising than, say Cr\Sub{2}O\Sub{7}\Sup{2-} or MnO\Sub{4}\Sup{-}
 	\item Di-carboxylic acids($HOOC-(CH_2)_{n}-COOH$) on heating give different products:
@@ -331,6 +381,47 @@ G* is calculated using an electrolyte with known conductivity
 			r_{\text{eff}}=\frac{P A}{\sqrt{2\pi M_{gas}RT}}N_{A}
 		\end{equation}
 		where $P$ is the pressure of the container, $A$ is the area of the orifice, $M_{gas}$ is the molar mass of the gas. 
+	\item Coagulating value= (millimoles of electrolyte used)/(volume of sol coagulated in L)  
+	\item $\mathrm{R-CONH2\ + HNO_2\rightarrow R-COOH+N_2}$
+	\item Lyophillic sols are highly viscous
+	\item Reactions of $\mathrm{MnO_{4}^{-}}$:
+		\begin{enumerate}
+			\item In acidic medium: $\mathrm{MnO_{4}^{-} \rightarrow Mn^{2+}}$(Purple to pale-pink )
+			\item In neutral medium: $\mathrm{MnO_{4}^{-} \rightarrow MnO_2}$ (Purple to black-brown )
+			\item In basic medium: $\mathrm{MnO_{4}^{-} \rightarrow MnO_4^{2-}}$(Purple to Green )
+
+		\end{enumerate}
+	\item Disiamylborane($\mathrm{Sia_2BH}$ ) is an organoborane used in organic synthesis. It is used for hydroboration–oxidation reactions of terminal alkynes, giving aldehydes via anti-Markovnikov hydration followed by tautomerization
+	\item O\Sub{3} is diamagnetic.
+	\item Coagulation value is the millimoles of an electrolyte that must be added to 1 L of a colloidal solution for complete coagulation. 
+	\item Beckmann rearrangement is the conversion of oxime to amide.
+	\item DCC converts -OH into a good Leaving Group
+	\item DIBAL-H is an electrophilic reducing reagent.
+	\item $1 \mathrm{Debye}= \frac{1}{c}\times 10^{-21} \mathrm{C-m}\approx 3.335 \times 10^{-30}\mathrm{C-m}$
+	\item Reactions of $K_2 Cr_2 O_7$:
+		\begin{enumerate}
+			\item In acidic medium: 
+		\end{enumerate}
+	\item Alum: $\mathrm{KAl(SO_4)_2}.12H_{2} O$
+	\item Allenes with different groups on the two terminal carbons are optically active if there are an even number of double bonds in the allene, while those with odd number of double bonds are not.
+	\item PCl\Sub{5} reacts with the carbonyl bond in a ketone to result in formation of geminal dichloride.
+	\item Ketone +HNO\Sub{2}/HCl forms the respective oxime.
+	\item Hinsberg test:
+		Benzene sulphonyl chloride is shaked with the sample with a strong base $(KOH/NaOH)$ and the following observations occur:
+		\begin{enumerate}
+			\item If there is a primary amine in the sample, it reacts to form a sulphonamide salt, which is soluble in water
+			\item If there is a secondaty amine in the sample, it reacts to form an insoluble sulphonamide
+			\item If there is a tertiary amine in the sample, it doesn't react initially and stays insoluble. However, after adding a bit of dilute acid, it forms an ammonium salt and thus dissolves in the sample. 
+		\end{enumerate}
+	\item $\mathrm{P_{4 \ (white)}+NaOH+ 3 H_2 O\rightarrow PH_3+ NaH_2 PO_2}$	
+	\item To calculate the equivalent mass in a disproportionation reaction, calculate the equivalent masses in each of both the reduction and oxidation reactions, adn then add them.
+	\item 231 for R=Me in amines and 213 for R=Et onwards for amines.
+	\item Entropy of mixing of ideal gases:
+		\begin{equation}
+			\Delta S=R\sum_{i=0}^{n} n_i \ln(\chi_i)=nR\sum_{i=0}^{n}\chi_i\ln(\chi_i)
+		\end{equation}
+	\item $\mathrm{R-CONH_2+P_2 O_5} \rightarrow \mathrm{R-C\equiv N}$  
+	\item Moist $\mathrm{Ag_{2} O}$ is used for hydrolysis of SN\Sub{2} type.
 \end{enumerate}
 \section{Math}
 \begin{enumerate}
@@ -349,13 +440,13 @@ G* is calculated using an electrolyte with known conductivity
 \begin{equation}
 	\int_{0}^{\frac{\pi}{2}} \sin^{n}(x)\cdot \cos^{m}(x)dx=\frac{[(n-1)(n-3)(n-5)\dots 2\ or \ 1][(m-1)(m-3)(m-5)\dots 2 \ or \ 1 ]}{(m+n-0)(m+n-2)(m+n-4)\dots 2 \ or \ 1} K
 \end{equation}
-\begin{equation}
+\begin{equation*}
 	\text{where }    K= 
 	\begin{dcases}
 		\frac{\pi}{2} ,& \text{if }  m \text{ and } n \text{ are even}\\
 		        1,              & \text{otherwise}
 	\end{dcases}
-\end{equation}			
+\end{equation*}			
 	\item Box product tricks:
 		\begin{enumerate}
 			\item \begin{equation}\left[(\vec{a}\Cr \vec{b}) \  (\vec{b}\Cr \vec{c}) \ (\vec{c}\Cr\vec{a})\right]=\left[\vec{a} \vec{b} \vec{c}\right]^2\end{equation}
@@ -389,7 +480,19 @@ G* is calculated using an electrolyte with known conductivity
 					\end{figure}
 				\end{centering}
 			\item Orthocentre $H$: \begin{equation}H= \left(\vec{a}+\vec{b}+\vec{c}\right)\end{equation}
+			\item The distance of orthocentre $H$ from vertex $A$ is:
+				\begin{equation}
+					HA= 2R\cos(A)
+				\end{equation}
+			The distance of orthocentre $H$ from side $a(=BC)$ is (where $D$ is the foot of $\perp$ from $A$):
+				\begin{equation}
+					HD=2R\cos(B)\cos(C)
+				\end{equation}
 		\end{enumerate}
+	\item For angles $A,B, C$ of a triangle:
+		\begin{equation}
+			\cos^2(A)+\cos^2(B)+\cos^2(C)=1-2\cos(A)\cos(B)\cos(C)
+		\end{equation}
 	\item Taylor series of $\tan(x)$:\begin{equation} \tan(x)\approx x+\frac{1}{3}x^3+\frac{2}{15}x^5+\dots\end{equation}
 		\item \begin{equation} \text{The coefficient of } x^r \text{ in } (1-x)^{-n} \text{ is } {{n+r-1} \choose {r}} \end{equation} 
 		\item But for choosing, you use $${{n+r-1} \choose {r-1}} $$ 
@@ -440,7 +543,7 @@ G* is calculated using an electrolyte with known conductivity
 				I &=\int_{1}^{\sqrt{2}+1}\frac{x^2-1}{x^2+1}\frac{1}{\sqrt{1+x^4}}dx
 			\\        &=\int_{1}^{\sqrt{2}+1}\frac{(1-\frac{1}{x^2})dx}{(x+\frac{1}{x})\sqrt{x^2+\frac{1}{x^2}}}
 			\end{align*}
-		\item Stewart's theorem is an overpowered theorem for Solutions of Triangles, and can be easily used to derive much stronger results than the hard to remember m-n rule. The theorem:
+		\item Stewart's theorem is a powerful theorem for Solutions of Triangles, and can be easily used to derive much stronger results than the hard to remember m-n rule. The theorem:
 			\begin{align}
 				\text{If in a } \Delta \text{ABC, a point } D \text{ divides } BC \text{ in } m \text{ and } n,\ then\\
 				\boxed{b^2 m +c^2 n=a(l^2+mn)}
@@ -531,5 +634,73 @@ G* is calculated using an electrolyte with known conductivity
 				\Rightarrow \boxed{\Delta_{bc} \Delta_{ab}=\Delta^2_{ca}}
 			\end{equation}
 		\item If thinking about shortest distance where lines are acting as a constraint, then think about the mirror images of the points about those lines			
+		\item If $A$ is a symmetric matrix, then $A^{-1}$ is a symmetric matrix too.
+		\item If three circles are tangent to a straight line with the smaller circle contained within the bigger two, the relation between their radii is:
+			\begin{equation}
+				\frac{1}{\sqrt{r}}=\frac{1}{\sqrt{R_1}}+\frac{1}{\sqrt{R_2}}
+			\end{equation}
+		\item If a question asks for collinearity of for points on a biquadratic or higher curve, differentiate them twice (so that it gets rid of linear and lower terms), and then declare that they have to have real and distinc roots. Use the determinant to find the condition.
+		\item If the eccentricity of the hyperbola is $\sqrt{(1+\frac{b^2}{a^2})}$, then the eccentricity of the conjugate hyperbola is $\sqrt{1+\frac{a^2}{b^2}}$
+		\item Sum of the sine of an AP of $n$terms of angles where first term is $a$ and common difference is $d$:
+			\begin{equation}
+				\sin(a)+\sin(a+d)+\dots + \sin(a+(n-1)d)=\frac{\sin(\frac{nd}{2})}{\sin(\frac{d}{2})}\sin(\frac{2a+(n-1)d}{2})		
+			\end{equation}
+		\item[!] Similarly for cosine, we can write:
+			\begin{equation}
+				\cos(a)+\cos(a+d)+\dots + \cos(a+(n-1)d)=\frac{\sin(\frac{nd}{2})}{\sin(\frac{d}{2})}\cos(\frac{2a+(n-1)d}{2})		
+			\end{equation}
+
+		\item For a point on the ellipse, the normal at that point acts as the angle bisector between the lines joining the point and the two foci.
+			i.e. $PG$ is the angle bisector of $PS$ and $PS'$
+		\item For a conic of the form 
+			\begin{equation*}
+				ax^2+2hxy+by^2+2gx+2fy+c=0
+			\end{equation*}
+			\begin{equation}	
+				\Delta :=
+			\begin{vmatrix}
+						a & h & g\\
+						h & b & f\\
+						g & f & c
+			\end{vmatrix}.
+			\end{equation}
+		If $\Delta=0$, the conic is two straight lines. Then:
+		\begin{itemize}
+			\item $h^2-ab=0$ implies perpendicular lines
+			\item $h^2-ab<0$ implies imaginary lines
+		\end{itemize}
+		\item If there is a comparison of $\displaystyle{\sum_{cyclic} a^2}$ and $\displaystyle{\prod_{cyclic} a}$, try to use the sum of the reciprocals to get an inequality and then use that in the expansion of $\displaystyle{\left(\sum_{cyclic}a\right)^2}$		
+		\item For the mid-point $V$ of a focal chord of a standard parabola:
+			\begin{equation}
+				PV^2=AV^2+3 AS^2
+			\end{equation}
+			where P is one of the ends of the focal chord, A is the vertex and S is the focus
+		\item if $N$ is expressed in the form $N=p_1^{n_1}\Cr p_2^{n_2}\Cr p_3^{n_3}\dots p_{k}^{n_k}$ then the number of ways in which $N$ can be expressed as a product of two co-prie numbers is $2^{k-1}$ where k is the number of its prime factors.
+		\item Radius of curvature:
+			\begin{itemize}
+				\item The radius of curvature $\rho$ is:
+					\begin{equation}
+						\rho = \Det{\frac{ds}{d\theta}} 
+					\end{equation}
+				\item For a function $y=f(x)$, the radius of curvature $\rho$ is:
+					\begin{equation}
+						\rho = \Det{\frac{(1+y'^2)^\frac{3}{2}}{y''}}
+					\end{equation}
+				\item For a point on the ellipse $P(a\cos(\theta), b\sin(\theta))$, $\rho$ is:
+					\begin{equation}	
+						\rho = \frac{(b \cos^2(\theta)+ a \sin^2(\theta))^\frac{3}{2}}{ab}		
+					\end{equation}
+				\item Thus, the maximum radius of curvature (minimum curvature) is at $(0,b)$ $\rho=\frac{a^2}{b}$and the minimum radius of curvature (maximum curvature) is at $(a,0)$, $\rho=\frac{b^2}{a}$
+
+			\end{itemize}
+   	\item For a series in $\tan$ and powers of $2$, remember the following for telescoping:
+			\begin{equation}
+				\tan(\theta)=\cot(\theta) - 2\cot(2\theta)
+			\end{equation}
+	\item A ray passing throuh one of the focus of an ellipse from the inside passes through the other focus on reflection
+	\item A useful identity for $\sec$ and $\cosec$
+		\begin{equation}
+			a^2\cosec^2(\theta)+b^2\sec^2(\theta)=(a\cot(\theta)-b\tan(\theta))^2+(a+b)^2)
+		\end{equation}
 \end{enumerate}
 \end{document}
